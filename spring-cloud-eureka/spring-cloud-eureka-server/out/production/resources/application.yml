@@ -1,0 +1,26 @@
+server:
+  port: 8761
+logging:
+  level:
+    root: debug
+    com:
+     spring: debug
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    fetch-registry: false  #禁止从获取eureka注册信息
+    register-with-eureka: false # 是否注册到eureka
+    serviceUrl:
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:${server.port}/eureka/
+
+#开启安全验证
+spring:
+  security:
+    user:
+      name: sunny
+      password: sunny
+    basic:
+      enabled: true
+  application:
+    name: eureka-server  # 服务名称
