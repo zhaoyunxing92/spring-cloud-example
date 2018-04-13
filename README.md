@@ -76,6 +76,8 @@ spring:
     name: eureka-server
 ```
 
+> eureka server 必须禁止`fetch-registry` 和`register-with-eureka` 否则启动报错
+
 ##### java代码
 
 ```java
