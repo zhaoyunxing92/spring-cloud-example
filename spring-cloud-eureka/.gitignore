@@ -1,6 +1,7 @@
 .gradle
 out/
 gradle/
+build/
 ### IntelliJ IDEA ###
 .idea
 *.iml
