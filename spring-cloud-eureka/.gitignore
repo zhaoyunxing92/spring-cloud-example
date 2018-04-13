@@ -1,8 +1,9 @@
 .gradle
+out/
+gradle/
 ### IntelliJ IDEA ###
 .idea
 *.iml
 
-/spring-cloud-eureka-provider/gradle/
-/spring-cloud-eureka-server/gradle/
-/spring-cloud-eureka-server/out/
+
+
