@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-cloud-eureka-provider.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-cloud-eureka-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-cloud-eureka-provider_main.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-cloud-eureka-provider_main.iml" group="spring-cloud-eureka-provider" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-cloud-eureka-provider_test.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-cloud-eureka-provider_test.iml" group="spring-cloud-eureka-provider" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-cloud-eureka-server.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-cloud-eureka-server.iml" />
     </modules>
   </component>
 </project>
