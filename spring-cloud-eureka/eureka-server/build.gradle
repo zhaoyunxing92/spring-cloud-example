@@ -4,6 +4,8 @@ buildscript {
     }
     repositories {
         mavenCentral()
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+       // jcenter()
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
@@ -20,6 +22,7 @@ version = '1.0-SNAPSHOT'
 sourceCompatibility = 1.8
 
 repositories {
+    maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
     mavenCentral()
     maven { url "http://repo.spring.io/snapshot" }
     maven { url "http://repo.spring.io/milestone" }
