@@ -1,11 +1,11 @@
 
 server:
   port: 8761
-#logging:
-#  level:
-#    root: debug
-#    com:
-#     spring: debug
+logging:
+  level:
+    root: debug
+    com:
+     spring: debug
 eureka:
   instance:
     hostname: localhost
