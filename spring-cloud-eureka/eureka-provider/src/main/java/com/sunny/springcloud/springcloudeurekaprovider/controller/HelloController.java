@@ -3,7 +3,6 @@ package com.sunny.springcloud.springcloudeurekaprovider.controller;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -19,7 +18,7 @@ public class HelloController {
     private String port;
 
     @GetMapping("/say")
-    String sayHello(@RequestParam String name) {
+    String sayHello(String name) {
         return "hello " + name + " i am from port:" + port;
     }
 }

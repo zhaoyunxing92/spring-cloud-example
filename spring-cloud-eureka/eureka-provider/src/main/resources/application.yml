@@ -1,11 +1,18 @@
 spring:
   application:
     name: eureka-provider
+  cloud:
+    config:
+      server:
+        health:
+          enabled: false
 server:
-  port: 8702
+  port: 8700
 eureka:
   client:
     serviceUrl:
         defaultZone: http://localhost:8761/eureka/
   instance:
     hostname: localhost
+
+
