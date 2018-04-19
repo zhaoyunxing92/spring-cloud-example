@@ -18,7 +18,7 @@ public class HelloController {
     private String port;
 
     @GetMapping("/say")
-    String sayHello(String name) {
+    String sayHello( String name) {
         return "hello " + name + " i am from port:" + port;
     }
 }

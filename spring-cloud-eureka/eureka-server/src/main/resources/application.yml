@@ -1,11 +1,5 @@
-
 server:
   port: 8761
-logging:
-  level:
-    root: debug
-    com:
-     spring: debug
 eureka:
   instance:
     hostname: localhost
@@ -14,6 +8,9 @@ eureka:
     register-with-eureka: false # 是否注册到eureka
     serviceUrl:
      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+#  server:
+#    enable-replicated-request-compression: false #关闭自我保护
+#    eviction-interval-timer-in-ms: 30000 # 清理时间
 spring:
   application:
     name: eureka-server
@@ -30,3 +27,8 @@ spring:
 #      enabled: true
 #  application:
 #    name: eureka-server  # 服务名称
+# logging:
+#   level:
+#     root: debug
+#     com:
+#      spring: debug

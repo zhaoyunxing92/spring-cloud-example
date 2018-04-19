@@ -1,11 +1,6 @@
 spring:
   application:
     name: eureka-provider
-  cloud:
-    config:
-      server:
-        health:
-          enabled: false
 server:
   port: 8700
 eureka:
@@ -13,6 +8,8 @@ eureka:
     serviceUrl:
         defaultZone: http://localhost:8761/eureka/
   instance:
-    hostname: localhost
+#    hostname: localhost
+    lease-expiration-duration-in-seconds: 30 #设置租期到期时间 （默认90秒）
+    lease-renewal-interval-in-seconds: 10   #租期更新时间间隔（默认30秒）
 
 

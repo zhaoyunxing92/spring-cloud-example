@@ -10,12 +10,13 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 @EnableEurekaClient
 public class SpringCloudRibbonApplication {
-	@Bean
-	@LoadBalanced
-	RestTemplate restTemplate() {
-		return new RestTemplate();
-	}
-	public static void main(String[] args) {
-		SpringApplication.run(SpringCloudRibbonApplication.class, args);
-	}
+    @Bean
+    @LoadBalanced
+    RestTemplate restTemplate() {
+        return new RestTemplate();
+    }
+
+    public static void main(String[] args) {
+        SpringApplication.run(SpringCloudRibbonApplication.class, args);
+    }
 }

@@ -14,14 +14,13 @@ import org.springframework.web.bind.annotation.RestController;
  * @description:
  */
 @RestController
-@RequestMapping("/")
+@RequestMapping
 public class HelloController {
     @Autowired
     private HelloServer helloServer;
 
     @GetMapping("/hello")
-    public String sayHello(@RequestParam String name) {
+    public String sayHello(@RequestParam(required = false, defaultValue = "sunny") String name) {
         return helloServer.sayHello(name);
     }
-
 }

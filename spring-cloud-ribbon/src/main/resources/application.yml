@@ -1,10 +1,8 @@
 spring:
   application:
-    name: ribbon
+    name: eureka-ribbon
 server:
   port: 8764
-  servlet:
-    context-path: /ribbon
 eureka:
   client:
     serviceUrl:

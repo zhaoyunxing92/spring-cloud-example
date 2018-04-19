@@ -16,6 +16,6 @@ public class HelloServer {
     private RestTemplate restTemplate;
 
     public String sayHello(String name){
-        return restTemplate.getForObject("http://EUREKA-PROVIDER/say?name="+name,String.class);
+        return restTemplate.getForObject("http://eureka-provider/say?name="+name,String.class);
     }
 }
