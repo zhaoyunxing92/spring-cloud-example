@@ -7,10 +7,12 @@
 ```groovy
 buildscript {
     ext {
-        springBootVersion = '2.0.1.RELEASE'
+        springBootVersion = '1.5.12.RELEASE'
     }
     repositories {
         mavenCentral()
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+       // jcenter()
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
@@ -23,10 +25,11 @@ apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
 group = 'com.sunny.spring-cloud'
-version = '1.0-SNAPSHOT'
+version = '1.0.0-SNAPSHOT'
 sourceCompatibility = 1.8
 
 repositories {
+    maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
     mavenCentral()
     maven { url "http://repo.spring.io/snapshot" }
     maven { url "http://repo.spring.io/milestone" }
@@ -35,13 +38,14 @@ repositories {
 
 
 ext {
-    springCloudVersion = 'Finchley.M9'
+    springCloudVersion = 'Dalston.SR1'
 }
 
 dependencies {
-    //使用spring-cloud-starter-eureka-server
-    compile('org.springframework.cloud:spring-cloud-starter-eureka-server:1.3.2.RELEASE')
+	compile('org.springframework.boot:spring-boot-starter-actuator')
+    compile('org.springframework.cloud:spring-cloud-starter-eureka-server')
     testCompile('org.springframework.boot:spring-boot-starter-test')
+    //testCompile('org.springframework.security:spring-security-test')
 }
 
 dependencyManagement {
@@ -49,6 +53,7 @@ dependencyManagement {
         mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
     }
 }
+
 
 ```
 
@@ -99,7 +104,7 @@ public class SpringCloudEurekaServerApplication {
 ```groovy
 buildscript {
     ext {
-        springBootVersion = '2.0.1.RELEASE'
+        springBootVersion = '1.5.12.RELEASE'
     }
     repositories {
         mavenCentral()
@@ -115,24 +120,23 @@ apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
 group = 'com.sunny.spring-cloud'
-version = '1.0.2-SNAPSHOT'
+version = '1.0.0-SNAPSHOT'
 sourceCompatibility = 1.8
 
 repositories {
-    mavenCentral()
-    maven { url "http://repo.spring.io/snapshot" }
-    maven { url "http://repo.spring.io/milestone" }
-    maven { url "http://repo.spring.io/plugins-release" }
+   mavenCentral()
+
 }
 
 
 ext {
-    springCloudVersion = 'Finchley.M9'
+    springCloudVersion = 'Dalston.SR1'
 }
 
 dependencies {
-    //使用 spring-cloud-starter-eureka
-    compile('org.springframework.cloud:spring-cloud-starter-eureka:1.3.2.RELEASE')
+    compile('org.springframework.boot:spring-boot-starter-actuator')
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.cloud:spring-cloud-starter-eureka')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
