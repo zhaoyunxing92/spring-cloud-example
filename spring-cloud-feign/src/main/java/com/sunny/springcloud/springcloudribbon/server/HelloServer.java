@@ -18,7 +18,7 @@ import org.springframework.web.client.RestTemplate;
 public interface HelloServer {
 
     @GetMapping("/say")
-    String sayHello(@RequestParam String name);
+    String sayHello(@RequestParam(value = "name") String name);
 //    public String sayHello(String name){
 //        return restTemplate.getForObject("http://eureka-provider/say?name="+name,String.class);
 //    }

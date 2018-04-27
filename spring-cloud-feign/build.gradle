@@ -31,7 +31,7 @@ repositories {
 
 
 dependencies {
-    compile('org.springframework.boot:spring-cloud-starter-feign:2.0.0.M8')
+    compile('org.springframework.cloud:spring-cloud-starter-feign')
     compile('org.springframework.boot:spring-boot-starter-web')
     compile('org.springframework.cloud:spring-cloud-starter-eureka')
     testCompile('org.springframework.boot:spring-boot-starter-test')
