@@ -22,3 +22,4 @@ compile('org.springframework.cloud:spring-cloud-starter-feign')
 缺少`spring-cloud-starter-feign` jar导致
 
 > [github代码地址](https://github.com/zhaoyunxing92/spring-cloud-example/tree/master/spring-cloud-feign) 欢迎大神指正
+
