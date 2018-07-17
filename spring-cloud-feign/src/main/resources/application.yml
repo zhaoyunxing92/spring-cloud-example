@@ -9,3 +9,9 @@ eureka:
         defaultZone: http://localhost:8761/eureka/
   instance:
     hostname: localhost
+logging:
+  level:
+    com.sunny.springcloud.springcloudribbon.controller: debug
+    com.netflix.loadbalancer: debug
+    org.springframework.web.servlet: debug
+
