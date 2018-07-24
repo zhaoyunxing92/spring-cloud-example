@@ -6,6 +6,6 @@ spring:
       fail-fast: true
       override-none: false
       override-system-properties: false
-      name: #对应github上的配置文件名称
+      name: spring-cloud-config-client #对应github上的配置文件名称
       profile: dev
       uri: http://127.0.0.1:7800
