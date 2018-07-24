@@ -24,7 +24,11 @@
     </properties>
 
     <dependencies>
-
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-config</artifactId>
+            <version>${spring.cloud.config.version}</version>
+        </dependency>
     </dependencies>
 
 </project>
