@@ -8,4 +8,4 @@ spring:
       override-system-properties: false
       name: spring-cloud-config-client #对应github上的配置文件名称
       profile: dev
-      uri: http://127.0.0.1:7800
+      uri: http://localhost:7800

@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
 
     <name>spring-cloud-config</name>
-    <description>spring-cloud 配置中心</description>
+    <description>spring-cloud-config 配置中心</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -38,6 +38,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
 
 
     <modules>
