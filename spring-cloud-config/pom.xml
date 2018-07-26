@@ -17,20 +17,6 @@
         <version>2.0.3.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-
-    <!--指定仓库地址-->
-    <distributionManagement>
-        <repository>
-            <id>repostory</id>
-            <name>Nexus Release Repository</name>
-            <url>http://nexus.rainbowev.cn/repository/ccclubs-releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>snapshots</id>
-            <name>Nexus Release Repository</name>
-            <url>http://nexus.rainbowev.cn/repository/ccclubs-snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
     
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -68,7 +54,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
 
     <modules>
         <module>config-client</module>
