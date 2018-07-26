@@ -8,3 +8,9 @@ spring:
       server:
         git:
           uri: https://github.com/zhaoyunxing92/spring-cloud-config-centre.git
+          search-paths: respo
+      label: master
+#logging:
+#  level:
+#      com: debug
+#      org: debug

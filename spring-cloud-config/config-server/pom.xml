@@ -8,7 +8,7 @@
     <packaging>jar</packaging>
 
     <name>config-server</name>
-    <description>配置中心-server</description>
+    <description>spring-cloud-config 服务端</description>
 
     <parent>
         <groupId>com.sunny.spring-cloud</groupId>
