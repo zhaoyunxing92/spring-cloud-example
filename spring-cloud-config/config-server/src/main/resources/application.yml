@@ -7,7 +7,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/zhaoyunxing92/spring-cloud-config-centre.git
+          uri: file://D:/code/java/spring-cloud-config-centre #https://github.com/zhaoyunxing92/spring-cloud-config-centre.git
           search-paths: respo
       label: master
 #logging:
